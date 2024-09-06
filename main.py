@@ -15,6 +15,7 @@ def handle_download():
 
 if os.path.getsize('output_links.txt') == 0:
     song_lister.fun1()
+    handle_download()
 else:
     print("Already there files in the queue to download.")
     print("You want to continue with the previous list of yours [press 1]")

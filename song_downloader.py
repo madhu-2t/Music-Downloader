@@ -39,7 +39,7 @@ def fun2(songs_count=None):
     for i,link in enumerate(to_download[:songs_count]):
          download_audio(link,output_path,ffmpeg_path)
          to_download.pop(i)
-         already_Downloaded.append(i)
+         already_Downloaded.append(link)
 
     with open("already_downloaded.txt", 'a') as file:
             # Loop through the list and write each link to the file

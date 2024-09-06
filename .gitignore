@@ -2,3 +2,4 @@
 *.m4a
 .venv/
 __pycache__/
+downloads/

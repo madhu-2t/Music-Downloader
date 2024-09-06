@@ -8,7 +8,8 @@ from selenium.webdriver.chrome.options import Options
 def fun1():
     chrome_options = Options()
     chrome_options.add_argument(r"user-data-dir=C:\Users\madhu\AppData\Local\Google\Chrome\User Data")
-    chrome_options.add_argument("--profile-directory=Default")  
+    # chrome_options.add_argument("--profile-directory=Default") # use this if you want to download from default 
+    chrome_options.add_argument("--profile-directory=Profile 1")   
 
     # Initialize the Chrome WebDriver
     driver = webdriver.Chrome(options=chrome_options)
